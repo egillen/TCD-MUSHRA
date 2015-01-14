@@ -1,7 +1,4 @@
 function dur = findClipDuration(audioclip)
-	% audioclip = 'C:\Users\eoin\Music\boz48_stereo_24kbps_aac.wav';
-	% cmd = ['C:\MediaInfoCLI\MediaInfo.exe --fullscan ' audioclip];
-	% cmd = ['MediaInfo --fullscan ' audioclip];
 	cmd = ['ffmpeg -i ' audioclip];
 	console_output_text = evalc('dos(cmd)');
 	durationMarker = 'Duration: ';
