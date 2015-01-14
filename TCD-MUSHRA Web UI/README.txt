@@ -1,7 +1,7 @@
 Instructions for use:
 1. Copy this directory (including all subdirectories) onto the Nexus 7. I created a directory called "BitWebServerProjects" at /sdcard/ but you can use whatever you want. 
-2. 1. Download the app "BitWebServer" from the Play Store onto the Nexus 7. 
-3.  Let it run for the first time and then go into Settings->Config Lighttpd->Web Root and choose the directory to which you've saved this project. (i.e. in my case it was "/sdcard/BitWebServerProjects")
+2. Download the app "BitWebServer" from the Play Store onto the Nexus 7. 
+3. Let it run for the first time and then go into Settings->Config Lighttpd->Web Root and choose the directory to which you've saved this project. (i.e. in my case it was "/sdcard/BitWebServerProjects")
 4. Start the Lighttpd server.
 5. Open Android Chrome and navigate to "localhost:8080/MUSHRAtest.html"
 
