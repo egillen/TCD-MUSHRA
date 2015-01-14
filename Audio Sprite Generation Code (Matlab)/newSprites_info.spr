@@ -1,0 +1,6 @@
+MUSHRA_audio_sprites
+# Music file 1
+audiosprites/boz.wav
+clips:boz48_stereo.wav,boz48_stereo.wav,boz48_stereo_128kbps_aac.wav,boz48_stereo_128kbps_opus.wav,boz48_stereo_24kbps_aac.wav,boz48_stereo_256kbps_aac.wav,boz48_stereo_48kbps_aac.wav,boz48_stereo_64kbps_aac.wav,boz48_stereo_96kbps_mp3.wav,boz48_stereo_lp35.wav,boz48_stereo_lp7.wav
+start:10,30,50,70,90,110,130,150,170,190,210
+end:23.28,43.28,63.33,83.29,103.4,123.33,143.4,163.4,183.32,203.28,223.28

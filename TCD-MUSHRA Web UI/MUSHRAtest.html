@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<body>
+	<header>
+		<title>TCD MUSHRA Test</title>
+		<meta name="viewport" content="width=device-width">
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="shortcut icon" sizes="196x196" href="resources/TCDMUSHRA_icon_196x196.png">
+		<link rel="stylesheet" href="css/MUSHRAtest.css" type="text/css" media="all" /> 
+	</header>
+	<script src="resources/jquery.min.js"></script>
+	<script src="resources/range-touch.js"></script>
+	<script src="resources/canvasjs.min.js"></script>
+	<script src="resources/display-range-value.js"></script>
+	<section>
+		<audio id="myAudioPlayer" data-customloop="false">
+			<source id="wav_src" src="resources/otso.wav" type="audio/wav">
+			Your browser does not support the audio element.
+		</audio>
+		<h1 id="test_finished_text" align="center">Test Finished!</h1>
+		<div id="intro_div">
+			<img id="sigmedia_logo" src="resources/Sigmedia_onblack.png"></img>
+			<p id="intro_text" align="center">Welcome to the TCD MUSHRA test. There are two parts to the test: a training mode where users are introduced to the audio clips in the test, followed by a test mode where users grade each clip based on their opinion of the quality. To begin, press the "Start Training" button below.</p>
+			<button type="button" id=start_button>Start Training</button>
+		</div>
+		<div id="user_interface">
+			<div id="header_div">
+				<b id="mode_info">Training Mode</b>
+				<b id="trial_info">Trial i of n</b>
+				<div id="next_button_and_arrow">
+					<button type="button" id=next_button>Next Trial</button>
+					<img id="next_arrow" src="resources/redarrow_trans.png"></img>
+				</div>
+			</div>
+			<br class="clearboth">
+			<div id="audio_control_panel">
+				<div id="audio_buttons">
+					<button type="button" id=play_button>Play</button>
+					<button type="button" id=pause_button>Pause</button>
+					<button type="button" id=loop_button>Loop</button>
+					<button type="button" id=fullscreen_button>FullScreen</button>
+				</div>
+				<div id="audio_sliders">
+					<p id="time_text">Time</p>
+					<div id="position_slider_div">
+						<label for=position_time_slider>Position</label>
+						<input type=range min=0 max=100 value=0 id=position_time_slider class="custom display-value" step=0.01 data-user_grabbed_slider="false" data-user_released_slider="false">
+						<output for=position_time_slider id=currenttime>0</output>
+					</div>
+					<div id="start_slider_div">
+						<label for=start_time_slider>Start</label>
+						<input type=range min=0 max=100 value=0 id=start_time_slider class="custom display-value" step=0.01>
+						<output for=start_time_slider id=starttime>0</output>
+					</div>
+					<div id="end_slider_div">
+						<label for=end_time_slider>Stop</label>
+						<input type=range min=0 max=100 value=100 id=end_time_slider class="custom display-value" step=0.01>
+						<output for=end_time_slider id=endtime>100</output>
+					</div>
+				</div>
+			</div>
+			<div id="sample_control_panel">
+				<div id="chart_div">
+					<p id="training_mode_instructions" align="center">This is the training phase. The purpose of the training phase is to allow you some time to familiarize yourself with the sound excerpts in the test and your opinion of their quality levels. </p>
+					<div id="chartContainer"></div>
+					<div id="score_text">
+						<span id="excellent_text">Excellent</span>
+						<span id="good_text">Good</span>
+						<span id="fair_text">Fair</span>
+						<span id="poor_text">Poor</span>
+						<span id="bad_text">Bad</span>
+					</div>
+				</div>
+				<div id="refbutton_div" class="selectorButtonsDiv">
+					<button type="button" class="selectorButtons" id=audio_selector_ref>REF</button>
+				</div>
+				<div id="sample_buttons">
+					<div id="sample_1_controls" class="selectorButtonsDiv">
+						<button type="button" class="selectorButtons" id="audio_selector_1">A</button>
+					</div>
+				</div>
+				<p id="sample_buttons_instr_text" align="center">Select Active Sample</p>
+				<p id="active_sample_text">Listening to: Reference</p>
+			</div>
+			<br class="clearboth">
+			<div id="score_control_div" align="center">
+				<div id="slider_ui">
+					<span id="bad_slidertext" align="center">Bad</span>
+					<span id="poor_slidertext" align="center">Poor</span>
+					<span id="fair_slidertext" align="center">Fair</span>
+					<span id="good_slidertext" align="center">Good</span>
+					<span id="excellent_slidertext" align="center">Excellent</span>
+					<input type=range min=0 max=100 value=100 id=score_slider class="custom display-value" step=1>
+					<br class="clearboth">
+					<div id="score_output_div">
+						<span id="score_indicator_text">Score: </span>
+						<output for=score_slider id="score">100</output>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="MUSHRAtest.js"></script>
+	</section>
+	</form>
+</body>
+</html>

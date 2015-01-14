@@ -1,0 +1,393 @@
+.clickedStyleClass {
+	border-style: inset;
+}
+
+.unclickedStyleClass {
+	border-style: none;
+}
+
+.selectorButtonsDiv {
+	float: left;
+	/* border: 1px solid red; */
+	width: 8%;
+	margin-right: 2%; /*1.75%;*/
+	padding-top: 0%;
+}
+
+.selectorButtons {
+	width: 100% !important;
+}
+
+.verticalSlider {
+	-webkit-appearance: slider-vertical
+}
+
+.touch {
+	width: 40%;
+}
+
+.custom {
+	-webkit-appearance: none !important;
+	height:20px;
+	border-radius: 8px;
+	background:-webkit-gradient(linear,center top, center bottom, from(#CFDCDD),to(#DFE9EA),color-stop(50%,#DFE9EA));
+	-webkit-transition: background 450ms;
+	transition: background 450ms;
+}
+
+/* Change the Slider Button Color Here */
+.custom::-webkit-slider-thumb {
+	-webkit-appearance: none !important;
+	background:#108A93;
+	height:30px;
+	width:30px;
+	border-radius: 15px;
+}
+
+.custom::-webkit-slider-thumb:before {
+	background-color: yellow;
+}
+
+.clearboth { clear: both; }
+
+body {
+	overflow: hidden;
+}
+
+#test_finished_text {
+	display: none;
+}
+
+#intro_div {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 950px;
+	height: 900px;
+}
+
+#sigmedia_logo {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#start_button {
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+}
+
+#user_interface {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 950px;
+	height: 900px;
+	/*display: none;*/
+	visibility: hidden;
+	overflow: hidden;
+}	
+
+#header_div {
+	position: relative;
+	top: 0%;
+	width: 100%;
+	height: 4%;
+	/*border: 1px solid red;*/
+}
+
+#mode_info {
+	float:left;
+	width: 40%;
+	font-size: 18pt;
+}
+
+#trial_info {
+	float: left;
+	font-size: 18pt;
+	display: none;
+}
+
+#next_button_and_arrow {
+	width: 20%;
+	height: 100%;
+	float: right;
+	/*border: 1px solid red;*/
+}
+
+#next_button {
+	top: 50%;
+	float: left;
+}
+
+#next_arrow {
+	width: 50%;
+	height: 70%;
+	float: right;
+}
+
+#audio_control_panel {
+	position: relative;
+	float: left;
+	top: 0%;
+	left: 0%;
+	height: 29%;
+	width: 40%;
+	/*border: 1px solid red;*/
+	/* background-color:hsla(0,20%,50%,0.3); */
+}
+
+#audio_buttons {
+	position: absolute;
+	height: 15%;
+}
+
+#audio_sliders {
+	position: absolute;
+	top: 16%;
+	left: 0%;
+	height: 84%;
+	width: 100%;
+}
+
+#position_slider_div {
+	position:relative;
+	top: 0%;
+	left: 0%;
+	height: 30%;
+	width: 100%;
+}
+
+#position_time_slider{
+	position: absolute;
+	top: 0%;
+	left: 15%;
+	width: 66%;
+}
+
+#currenttime {
+	position: absolute;
+	top: 0%;
+	left: 86%;
+}
+
+#start_slider_div {
+	position:relative;
+	top: 2%;
+	left: 0%;
+	height: 30%;
+}
+
+#start_time_slider{
+	position: absolute;
+	top: 0%;
+	left: 15%;
+	width: 66%;
+}
+
+#starttime {
+	position: absolute;
+	top: 0%;
+	left: 86%;
+}
+
+#end_slider_div {
+	position:relative;
+	top: 4%;
+	left: 0%;
+	height: 30%;
+}
+
+#end_time_slider{
+	position: absolute;
+	top: 0%;
+	left: 16%;
+	width: 66%;
+}
+
+#endtime {
+	position: absolute;
+	top: 0%;
+	left: 86%;
+}
+
+#sample_control_panel {
+	position: relative;
+	float: right;
+	width: 59%;
+	height: 40%;
+	/*border: 1px solid red;*/
+	/*display: none; */
+	/* background-color:hsla(240,40%,50%,0.3); */
+}
+
+#chart_div {
+	position: relative;
+	top: 0%;
+	width: 100%;
+	height: 80%;
+	/*border: 1px solid red;*/	
+}
+
+#chartContainer {
+	visibility: hidden;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	height: 100%;
+	width: 90%;
+	/*border: 1px solid red;*/
+	/*display: none;*/
+}
+
+#training_mode_instructions {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 1px solid red;
+}
+
+#score_text {
+	position: absolute;
+	float: left;
+	width: 10%;
+	height: 100%;
+	display: none;
+}
+
+#excellent_text {
+	position: absolute;
+	top: 19%;
+}
+
+#good_text {
+	position: absolute;
+	top: 33%;
+}
+
+#fair_text {
+	position: absolute;
+	top: 47%;
+}
+
+#poor_text {
+	position: absolute;
+	top: 61%;
+}
+
+#bad_text {
+	position: absolute;
+	top: 75%;
+}
+
+#refbutton_div {
+	position: absolute;
+	top: 80%;
+	float: left;
+	margin-left: 1%;
+	width: 8%;
+	/*border: 1px solid red;*/
+}
+
+#sample_buttons {
+	position: absolute;
+	top: 80%;
+	left: 23%;
+	width: 76%;
+	height: 10%;
+	overflow: hidden;
+	/* border: 1px solid red; */
+}
+
+#sample_buttons_instr_text{
+	position: absolute;
+	top: 85%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#active_sample_text {
+	position: absolute;
+	top: 95%;
+	left: 6%;
+}
+
+#score_control_div {
+	position:relative;
+	top: 4%;
+	/*left: 19%; */
+	height: 10%;
+	width: 100%;
+	display: none;
+	/*border: 1px solid red;*/
+	/* background-color:hsla(0,20%,50%,0.3); */
+	/* overflow-x: scroll;
+	overflow-y: visible; */
+}
+
+#slider_ui {
+	width: 80%;
+	/* border: 1px solid red; */
+}
+
+#excellent_slidertext {
+	float: left;
+	width: 20%;
+}
+
+#good_slidertext {
+	float: left;
+	width: 20%;
+}
+
+#fair_slidertext {
+	float: left;
+	width: 20%;
+}
+
+#poor_slidertext {
+	float: left;
+	width: 20%;
+}
+
+#bad_slidertext {
+	float: left;
+	width: 20%;
+}
+
+#score_slider {
+	background-image: url(../resources/score_scale_background_trans.png); /* fallback */
+	background-image: url(../resources/score_scale_background_trans.png), -webkit-gradient(linear,center top, center bottom, from(#3366FF),to(#EBF0FF),color-stop(50%,#EBF0FF)); /* Saf4+, Chrome */
+	background-image: url(../resources/score_scale_background_trans.png), -webkit-linear-gradient(top, #3366FF, #EBF0FF); /* Chrome 10+, Saf5.1+ */
+	background-image: url(../resources/score_scale_background_trans.png),    -moz-linear-gradient(top, #3366FF, #EBF0FF); /* FF3.6+ */
+	background-image: url(../resources/score_scale_background_trans.png),     -ms-linear-gradient(top, #3366FF, #EBF0FF); /* IE10 */
+	background-image: url(../resources/score_scale_background_trans.png),      -o-linear-gradient(top, #3366FF, #EBF0FF); /* Opera 11.10+ */
+	background-image: url(../resources/score_scale_background_trans.png),         linear-gradient(top, #3366FF, #EBF0FF); /* W3C */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+}
+
+#score_output_div {
+	width: 14%;
+}
+
+#score_indicator_text {
+	/*border: 1px solid red;*/
+	float:left;
+}
+
+#score {
+	/*border: 1px solid red;*/
+	float:right;
+}
+
+#footer_id {
+	position: fixed;
+	bottom: 10%;
+}
